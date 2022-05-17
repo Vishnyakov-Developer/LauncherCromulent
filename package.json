@@ -1,0 +1,36 @@
+{
+  "name": "Launcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-builder -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.1.0",
+    "electron-builder": "^22.14.5"
+  },
+  "dependencies": {
+    "uaup-js": "latest"
+  },
+  "build": {
+    "productName": "Launcher",
+    "appId": "e1",
+    "electronVersion": "16.0.6",
+    "win": {
+      "target": [],
+      "icon": "src/img/icon.png"
+    },
+    "portable": {
+      "artifactName": "Launcher"
+    },
+    "directories": {
+      "output": "electron/dist",
+      "buildResources": "build"
+    }
+  }
+}
